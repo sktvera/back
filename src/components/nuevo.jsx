@@ -9,8 +9,6 @@ class Nuevo extends Component{
         }
     }
     
-
-
     render(){
         return(
             <div>
