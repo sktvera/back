@@ -19,7 +19,7 @@ const Awesome = () => {
       <br></br>
       <input onBlur={(v) => setLastName(v.target.value)}></input>
       <br></br>
-      <button onClick={validateData}>NEXT</button>
+      <a href="#"onClick={validateData} className="btn">NEXT</a>
     </div>
   );
 };

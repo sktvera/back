@@ -6,7 +6,7 @@ const TvPlan = () => {
       <input></input>
       <input></input>
       <Link to="/GreatNews">
-        <button>I AM READY</button>
+        <a href="#" className="btn">I AM READY</a>
       </Link>
     </div>
   );

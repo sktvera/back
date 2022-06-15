@@ -1,5 +1,19 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 const Address = () => {
+
+  const navigate = useNavigate();
+  const [streetAdress, setStreetAdress] = useState("");
+  const [apt, setApt] = useState("");
+
+
+  const validateData = () => {
+    let validate = streetAdress !== "" && apt != "";
+
+    console.log(validate);
+    validate && navigate("/TvPlan");
+  };
   return (
     <div>
       <label>
@@ -7,15 +21,18 @@ const Address = () => {
       </label>
       <br></br>
       <legend title="hola">
-        <input></input>
+        <input onBlur={(v) => setStreetAdress(v.target.value)}></input>
       </legend>
-      <input></input>
+      <input onBlur={(v) =>  setApt(v.target.value)}></input>
       <br></br>
 
-      <Link to="/TvPlan">
-        <button>YES!</button>
-      </Link>
+      
+       <a href="#"onClick={validateData} className="btn">YES!</a>
+      
     </div>
+
+    
+    
   );
 };
 
