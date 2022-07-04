@@ -12,14 +12,36 @@ const Awesome = () => {
     validate && navigate("/Address");
   };
   return (
-    <div>
-      <label>Awesome! let's get started with the basics.</label>
-      <br></br>
-      <input onBlur={(v) => setName(v.target.value)}></input>
-      <br></br>
-      <input onBlur={(v) => setLastName(v.target.value)}></input>
-      <br></br>
+    <div className="grilla">
+      <div>
+         <p>Awesome! Let's get started with the basics.</p>
+      </div>
+
+          <div className="box">
+          
+               <label className="title_input">FIRST NAME</label>
+     
+              <input className="input_select" onBlur={(v) => setName(v.target.value)}></input>
+      
+          </div>
+    
+      
+     
+      
+      <div className="inputs">
+      <input placeholder="LAST NAME" onBlur={(v) => setLastName(v.target.value)}></input>
+      </div>
+      
+      <div className="btns">
       <a href="#"onClick={validateData} className="btn">NEXT</a>
+      </div>
+
+      <div>
+        <label className="label_down">
+          STEP 1 OF 4
+        </label>
+      </div>
+      
     </div>
   );
 };

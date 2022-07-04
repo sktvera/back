@@ -15,19 +15,45 @@ const Address = () => {
     validate && navigate("/TvPlan");
   };
   return (
-    <div>
-      <label>
-        Pleasure to meet you,Cristian! what is your install Address?
-      </label>
-      <br></br>
-      <legend title="hola">
-        <input onBlur={(v) => setStreetAdress(v.target.value)}></input>
-      </legend>
-      <input onBlur={(v) =>  setApt(v.target.value)}></input>
-      <br></br>
-
+    <div className="grilla">
+      <div></div>
+      <div>
+      <p>
+        Pleasure to meet you,Cristian! 
+        <div>
+        what is your install Address?
+        </div>
+       
+      </p>
+      </div>
+     
       
-       <a href="#"onClick={validateData} className="btn">YES!</a>
+      <div className="inputs">
+      <input placeholder="STREET ADDRESS, CITY, STATE" onBlur={(v) => setStreetAdress(v.target.value)}></input>
+      </div>
+       
+      <div className="inputs">
+      <input placeholder="APT#" onBlur={(v) =>  setApt(v.target.value)}></input>
+      </div>
+
+      <div>
+        <p>I can't find my Address</p>
+      </div>
+      
+     
+
+      <div className="btns">
+      <a href="#"onClick={validateData} className="btn">YES!</a>
+      </div>
+
+      <div>
+        <label className="label_down">
+          STEP 2 OF 4
+        </label>
+      </div>
+
+      <div></div>
+      
       
     </div>
 

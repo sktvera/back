@@ -32,7 +32,8 @@ padding-top: 0px;
  .boton {
         text-align: center !important;}
 
-.grilla{display: grid;
+.grilla{
+  display: grid;
 grid-template-columns: 1/1fr;
 position: relative;
 top:2em;
@@ -53,5 +54,81 @@ background-color:rgb(64, 64, 255);
 
 }
 
+.grilla .inputs input{
+ margin-bottom: 8px;
+  padding:.5rem 5rem ;
+  border: 0;
+  outline: solid 1px;
+  border-radius: 5px;
+  display: block;
+}
+
+
+
+
+.grilla .inputs{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+  .grilla .btns{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;}
+
+    .grilla div .label_down{
+      margin-top: 10PX;
+      color:rgba(150, 150, 150, 0.734); 
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 9px;
+      display: flex;
+      justify-content: center;
+      
+    }
+
+  
+
+    .input_select{ 
+      
+      margin-bottom: 8px;
+      padding:.5rem 5rem ;
+      border: 0;
+      outline: solid 1px;
+      border-radius: 5px;
+      display: block;
+      position: relative
+      
+    }
+
+    .grilla div .title_input{
+      
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      position: absolute;
+      padding-bottom: 80px;
+      
+      background-color: rebeccapurple;
+      
+      
+      
+    }
+
+    .grilla .box{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      
+      }
+
+  /* .inputs input:focus + div .title_input{
+    transform: translateY(-1.5rem);
+    transition: .5s;
+  } */
+
+ 
+
+
+    
 
   

@@ -22,8 +22,9 @@ const TvSerice = () => {
  //  };
 
   return (
-    <div className="grilla">
+    <div  className="grilla">
       <div>
+        
         <h1>The Best TV service
             <div>
               around!
@@ -32,7 +33,7 @@ const TvSerice = () => {
       </div>
       
       <div>
-      <p>Are you ready to enjoy ultra-best service?</p>
+      <p >Are you ready to enjoy ultra-best service?</p>
       </div>
      
       {/* <p>{age}</p>
@@ -47,6 +48,7 @@ const TvSerice = () => {
      <a href="#" className="btn">LET'S DO IT!</a>
       </Link>
       </div>
+     
         
     </div>
   );
