@@ -1,14 +1,13 @@
 import { useState } from "react";
+//REACT ROUTER DOM
 import { Link, useNavigate } from "react-router-dom";
-
+//validaciones de formularios
 const Address = () => {
-
   const navigate = useNavigate();
   const [streetAdress, setStreetAdress] = useState("");
   const [apt, setApt] = useState("");
 
-
-  const validateData = () => {
+    const validateData = () => {
     let validate = streetAdress !== "" && apt != "";
 
     console.log(validate);
@@ -29,12 +28,11 @@ const Address = () => {
      
       
       <div className="inputs">
-      <input placeholder="STREET ADDRESS, CITY, STATE" onBlur={(v) => setStreetAdress(v.target.value)}></input>
+      <input className="input_street"placeholder="STREET ADDRESS, CITY, STATE" onBlur={(v) => setStreetAdress(v.target.value)}></input>
+      <input className="APT" placeholder="APT#" onBlur={(v) =>  setApt(v.target.value)}></input>
       </div>
        
-      <div className="inputs">
-      <input placeholder="APT#" onBlur={(v) =>  setApt(v.target.value)}></input>
-      </div>
+    
 
       <div>
         <p>I can't find my Address</p>
