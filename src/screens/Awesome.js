@@ -30,7 +30,7 @@ import { Link, useNavigate } from "react-router-dom";
           </div>
       
       <div className="inputs">
-          <input placeholder="LAST NAME" onBlur={(v) => setLastName(v.target.value)}></input>
+          <input className="input_select"placeholder="LAST NAME" onBlur={(v) => setLastName(v.target.value)}></input>
       </div>
       
       <div className="btns">
