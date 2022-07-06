@@ -1,5 +1,7 @@
 import { useState } from "react";
+//REACT ROUTER DOM
 import { Link, useNavigate } from "react-router-dom";
+//css
 import '../styles/styles.css'
 
 const TvSerice = () => {

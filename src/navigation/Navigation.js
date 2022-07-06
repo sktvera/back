@@ -12,13 +12,7 @@ import Errors from "../screens/Errors"
 const Navigation = () =>{
     return(
 <Router>
-    <div>
-                {/* <Link to="/" > <button>LET'S DO IT!</button> </Link>
-                <Link to="/Awesome"><button>NEXT</button></Link>
-                <Link to="/Address"><button>YES!</button></Link>
-                <Link to="/TvPlan"><button>I AM READY</button></Link>
-                <Link to="/GreatNews"><button>SUSCRIBE NOW!</button></Link> */}
-            
+    <div>       
         <Routes>
            <Route  path="/"  element = {<TvSerice/>} />
            <Route path="/Awesome" element = {<Awesome/>} />
