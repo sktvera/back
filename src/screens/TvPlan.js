@@ -6,12 +6,19 @@ const TvPlan = () => {
       <p>Please select the Tv plan you wnat to enjoy:</p>
       </div>
       
-      <div>
-      <input></input>
+      
+      <div className="container1 cont">
+          <p>Premium</p>
+          <label>Service</label>
+          <p>50</p>
+        <input type="checkbox"></input>
         </div>
 
-        <div>
-        <input></input>
+        <div className="container2 cont" >
+          <p>Basic</p>
+          <label>Service</label>
+          <p>30</p>
+        <input type="checkbox"></input>
         </div>
       
 

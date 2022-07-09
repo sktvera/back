@@ -35,7 +35,7 @@ const Address = () => {
     
 
       <div>
-        <p>I can't find my Address</p>
+        <p className="sub_address"><a href="">I can't find my address</a></p>
       </div>
       
      
