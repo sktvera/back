@@ -20,17 +20,21 @@ const GreatNews = () => {
       <p>Great news! your first month's free!</p>
       </div>
       
-      <label>
+      <label className="sub_tittle_two">
         to get set up, just provide your email and phone numer and we can remind
         you when the free trial ends
       </label>
 
       <div className="inputs">
-      <input onBlur={(v) => setEmail(v.target.value)}></input>
+      <input className="input_select" placeholder="EMAIL" onBlur={(v) => setEmail(v.target.value)}></input>
       </div>
 
       <div className="inputs">
-      <input onBlur={(v) =>  setPhoneNumber(v.target.value)}></input>
+      <input className="input_select" onBlur={(v) =>  setPhoneNumber(v.target.value)}></input>
+      </div>
+
+      <div>
+        <p className="sub_address"><a href="">I have promo code!</a></p>
       </div>
       
       

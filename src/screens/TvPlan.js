@@ -3,23 +3,25 @@ const TvPlan = () => {
   return (
     <div className="grilla">
       <div>
-      <p>Please select the Tv plan you wnat to enjoy:</p>
+      <p className="title">Please select the Tv plan you wnat to enjoy:</p>
       </div>
       
-      
-      <div className="container1 cont">
+       <div className="container">
+       <div className="card"> 
           <p>Premium</p>
           <label>Service</label>
           <p>50</p>
         <input type="checkbox"></input>
         </div>
 
-        <div className="container2 cont" >
+        <div className="card" >
           <p>Basic</p>
           <label>Service</label>
           <p>30</p>
         <input type="checkbox"></input>
         </div>
+       </div>
+      
       
 
       <div className="btns">
